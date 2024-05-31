@@ -1,0 +1,32 @@
+<div class="foods">
+    <form action="/addFood" method="post" enctype="multipart/form-data">
+        <div class="addFoodForm">
+            <label for="FoodName">Food Name</label>
+            <input 
+            type="text" 
+            name="FoodName" 
+            id="foodName"
+            placeholder="Enter food name"
+            required>
+        </div>
+
+        <div class="addFoodForm">
+        <label for="price">Price</label>
+        <input type="number" 
+        name="price" 
+        id="foodPrice"
+        placeholder="Enter price of food"
+        required>
+        </div>
+
+        
+        <div class="addFoodForm">
+        <label for="img">Upload food Image</label>
+        <input type="file" 
+        name="FoodImage" 
+        id="foodImage"
+        >
+        </div>
+        <button type="submit">Add</button>
+    </form>
+</div>

@@ -1,0 +1,84 @@
+<div class="select-items">
+    <ul>
+        <li>
+            <a href="menus">Beverages</a>
+        </li>
+        <li>
+            <a href="menus">Lunch</a>
+        </li>
+        <li>
+            <a href="menus">Dinner</a>
+        </li>
+        <li>
+            <a href="menus">Tasting</a>
+        </li>
+        <li>
+            <a href="menus">Desserts</a>
+        </li>
+    </ul>
+</div>
+
+<div class="menu-page"> 
+    <%menusItem.forEach((menus)=> {%>
+        <div class="all-items">
+            <a href="checkout/<%= menus._id %>"><img id="menus-food-image"src="static/images/<%=menus.FoodImage%>" alt="menu-food-1"></a>
+        <div class="menu-food-1-desc">
+            <a href="checkout/<%= menus._id %>"><%=menus.FoodName%></a>
+            <p><a href="checkout/<%= menus._id %>">Rs. <%=menus.price%></a></p>
+        </div>
+    </div>
+   <%})%>
+   
+
+   <!-- <script type="text/javascript">
+    document.getElementById("menus-food-image").onclick = function(){
+        location.href = "checkout.ejs"
+    }
+   </script> -->
+    <!-- <div class="all-items">
+       
+            <a href="checkout"><img id="menus-food-image"src="static/coffee.jpg" alt="menu-food-1"></a>
+        
+        <div class="menu-food-1-desc">
+            <a href="checkout">Food Name</a>
+            <p>Rs. 10/-</p>
+        </div>
+    </div>
+    <div class="all-items">
+        
+            <a href="checkout"><img id="menus-food-image"src="static/coffee.jpg" alt="menu-food-1"></a>
+        
+        <div class="menu-food-1-desc">
+            <a href="checkout">Food Name</a>
+            <p>Rs. 10/-</p>
+        </div>
+    </div>
+    <div class="all-items">
+        
+            <a href="checkout"><img id="menus-food-image"src="static/coffee.jpg" alt="menu-food-1"></a>
+        
+        <div class="menu-food-1-desc">
+            <a href="checkout">Food Name</a>
+            <p>Rs. 10/-</p>
+        </div>
+    </div>
+    <div class="all-items">
+        
+            <a href="checkout"><img id="menus-food-image"src="static/coffee.jpg" alt="menu-food-1"></a>
+        
+        <div class="menu-food-1-desc">
+            <a href="checkout">Food Name</a>
+            <p>Rs. 10/-</p>
+        </div>
+    </div>
+    <div class="all-items">
+        
+            <a href="checkout"><img id="menus-food-image"src="static/coffee.jpg" alt="menu-food-1"></a>
+        
+        <div class="menu-food-1-desc">
+            <a href="checkout">Food Name</a>
+            <p>Rs. 10/-</p>
+        </div>
+    </div> -->
+</div>
+    

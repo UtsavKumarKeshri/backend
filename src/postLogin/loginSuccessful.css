@@ -1,0 +1,31 @@
+
+.back {
+    background-color: #baa7c4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.addFoodButton ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.addFoodButton ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.addFoodButton ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: 1px solid #2600ff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.addFoodButton ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}

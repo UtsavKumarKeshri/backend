@@ -1,0 +1,129 @@
+/* style.css */
+.itemCheckout {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 15%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.itemDetails {
+    /* margin-right: 20px;  */
+    /* text-align: center; */
+    width: 50%;
+}
+
+#itemName{
+    position: sticky;
+    top: 0;
+}
+.itemImage img {
+    width: 50%;
+}
+.itemImage img {
+    max-width: 90%; 
+    max-height: 90%; 
+    border-radius: 10%;
+}
+
+#checkoutButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c0a50c; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in;
+}
+
+#checkoutButton:hover {
+    background:goldenrod;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px groove  black;
+    text-shadow: 2px    2px 15px blue;
+    box-shadow: 2px    2px 15px blue;
+}
+
+
+.orderForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.orderForm h3{
+    margin-bottom: 20px;
+    color: brown;
+    font-size: 1.5em;
+}
+.orderForm{
+    background: linear-gradient(180deg, rgba(255,255,255,0.6474964985994398) 0%, rgb(90, 132, 137) 55%, rgb(70, 95, 120) 100%);
+}
+
+.orderUserForm  {
+    display: grid;
+    font-size: 1.4em;
+    margin-bottom: 2%;
+    
+}
+
+#orderName, #orderMobNo, #orderQuantity, #orderEmail{
+    background:transparent;
+    border: none;
+    border-bottom: 2px  solid   rgb(34, 0, 121);
+    border-radius: 20%;
+    padding-left: 20px;
+}
+
+#orderMessage{
+    background:transparent;
+    /* border: none; */
+    border: 2px  solid   rgb(34, 0, 121);
+    padding-left: 20px;
+}
+
+.orderUserForm  label{
+    font-weight: bolder;
+}
+
+#orderName:focus, #orderMobNo:focus, #orderQuantity:focus, #orderMessage:focus{
+    border: 2px solid   green;
+    border-radius: 3%;
+    box-shadow: 3px 3px 3px blue;
+}
+#orderSubmit{
+    background-color: rgb(58, 177, 237);
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+#orderSubmit:hover{
+    color: white;
+    background-color: rgb(192, 192, 12);
+    box-shadow: 2px 3px 5px black;
+}
+
+.payment-Mode{
+   width: 5%;
+   margin: 20px    20px    20px    20px;
+}
+
+.paymentForm{
+    display: inline-flex;
+    color: rgb(242, 255, 0);
+}
+
+#TotalAmount{
+    color: brown;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #ffffff;
+}
+
+#note{
+    color: rgb(255, 255, 255);
+}

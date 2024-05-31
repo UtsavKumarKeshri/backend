@@ -1,0 +1,86 @@
+.menu-page{
+    margin-top: 80px;
+}
+
+.select-items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.select-items li{
+    display: inline;
+    padding: 20px   20px    20px    20px;
+    margin: 5px 20px    5px 20px;
+    border-bottom: 2px solid blue;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-end-start-radius: 50%;
+    border-end-end-radius: 50%;
+    background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(199,209,232,1) 55%, rgba(77,77,77,1) 100%);
+}
+
+.select-items li   a{
+    background: linear-gradient(to right, rgb(94, 102, 211), rgb(255, 0, 0));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3em;
+}
+
+
+
+
+.menu-page{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0px 120px   0px 120px;
+  
+}
+
+.all-items{
+    
+
+    text-align: center;
+    width: 30%; 
+    margin-bottom: 20px;
+    
+
+}
+
+#menus-food-image{
+    width: 400px;
+    height: 300px;
+    border-radius: 20%;
+    box-shadow: 1px 1px 15px    rgb(119, 74, 74);
+}
+
+.menu-food-1-desc{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 3px groove green;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background:linear-gradient(180deg, rgba(249, 250, 245, 0) 0%, rgba(241, 149, 0, 0.359) 55%, rgb(120, 93, 18) 100%);
+}
+
+.menu-food-1-desc a{
+    font-size: 2em;
+    background: linear-gradient(to right, rgb(0, 12, 177), rgb(255, 0, 0));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.menu-food-1-desc p{
+    font-size: 1.5em;
+}

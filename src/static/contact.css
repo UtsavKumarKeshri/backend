@@ -1,0 +1,164 @@
+
+
+.fdbk-form-ContentBox {
+    display: flex;
+    background: linear-gradient(90deg, rgba(88,51,3,1) 0%, rgba(151,103,87,1) 66%, rgba(238,174,202,1) 100%);
+    padding: 20px;
+}
+
+.fdbk-formControl {
+    width: 50%;
+}
+
+#fdbk-form-heading-name {
+    color: brown;
+    text-shadow: 2px 2px 5px yellow;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 3em;
+    font-family: "Sofia", sans-serif;
+
+}
+
+.fdbk-formControl h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+    font-family: "Sofia", sans-serif;
+    color: rgb(7, 0, 0);
+    text-shadow: 5px    5px 5px yellow;
+    
+    /* border-bottom: 8px  groove  rgb(7, 187, 91); */
+    /* border-radius: 50%; */
+}
+
+.fdbk-form-group {
+    display: grid;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    
+    padding: 10px   40px    40px    40px;
+    border-radius: 30px;
+}
+    
+.fdbk-form-group label {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px    5px 10px rgb(0, 255, 0);
+    font-size: 1.7em;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+#fdbk-form-user-name,
+#fdbk-form-user-email
+{
+    font-size: 1.4em;
+    outline: none;
+    border: none;
+    border-bottom: 3px  groove  brown;   
+    border-radius: 10%;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    color: whitesmoke;
+    background: transparent;}
+
+    #user-message {
+        font-size: 1.4em;
+        outline: none;
+        border: none;
+        border: 3px  solid  brown;   
+        border-radius: 3%;
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        color: whitesmoke;
+        background: transparent;}
+    
+    #fdbk-form-user-email:focus,
+    #fdbk-form-user-name:focus,
+    #user-message:focus
+    {
+        border: 3px  groove  wheat;
+        border-radius: 10px;
+    }
+
+    ::placeholder{
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        text-shadow: 3px    3px 3px rgb(0, 0, 0);
+    }
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.fdbk-form-img {
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('contactImage.png');
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.img    p{
+    font-size: 1.5em;
+    color: rgb(252, 252, 252);
+    text-shadow: 4px    4px 4px red;
+    
+}
+
+
+#text-align-right-fdbk-form{
+    color: rgb(255, 251, 0);
+    font-family: "Sofia", sans-serif;
+    text-shadow: 4px    4px 4px rgb(0, 21, 255);
+    font-size: 1.8em;
+}
+    
+
+
+#fdbk-form-Submit:hover{
+    color: whitesmoke;
+    background-color: rgb(72, 0, 255);
+    font-size: 1.3em;
+    box-shadow: 4px    4px 4px black;
+}
+
+.fdbk-form-img  p{
+    font-size: 1.6em;
+    display: block;
+    color: whitesmoke;
+    text-shadow: 2px    2px     10px yellow;
+}
+#emailId{
+    color: blue;
+    font-weight: bold;
+}
+
+#callNo{
+    color: brown;
+}
+

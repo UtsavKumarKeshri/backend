@@ -1,0 +1,33 @@
+<table class="table table-striped">
+   
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Item Price</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% menusArr.forEach((menus)=>{ %>
+      <tr>
+      
+        <th scope="row">->></th>
+        <td><%=menus.FoodName%></td>
+        <td><%=menus.foodPrice%></td>
+        <td><img src="<%=menus.FoodImage%>" alt="menu-food-1" width="200px" height="100px"></td>
+        
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+<div class="hyperlinks">
+
+
+  <div class="redirect-addFood-Page">
+      <a href="addFood">Add more Items</a>
+  </div>
+  <div class="redirect-view-added-items">
+    <p>Go to <a href="menus">View Items</a></p>
+  </div>
+</div>

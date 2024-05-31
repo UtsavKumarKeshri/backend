@@ -1,0 +1,100 @@
+<!-- checkout.ejs -->
+<div class="itemCheckout">
+    <div class="itemImage">
+        <img src="../static/images/<%=menuItem.FoodImage%>" alt="Image">
+    </div>
+    <div class="itemDetails">
+        <h1 id="itemName"><%= menuItem.FoodName %></h1>
+        <p id="itemPrice">Price: Rs.<%= menuItem.price %> /-</p>
+        <button id="checkoutButton">Order Now</button><a href="/checkout" class="checkoutButton"></a>
+    </div>
+</div>
+<div class="orderForm">
+    <form action="/order" method="post" id="orderForm" style="display: none;">
+        <h3>Please provide us some additional details: </h3>
+        <div class="orderUserForm">
+            <label for="Order For">Order For</label>
+            <input type="text" name="orderName" id="OrderName" value="<%= menuItem.FoodName %>">
+            <label for="name">Name: </label>
+            <input 
+            type="text" 
+            name="customerName" 
+            id="orderName"
+            placeholder="Enter your Name"
+            required>
+        </div>
+        <div class="orderUserForm">
+            <label for="name">Mobile No: </label>
+            <input 
+            type="number" 
+            name="contactNo" 
+            id="orderMobNo" 
+            maxlength="10" 
+            placeholder="Enter your Mobile Number"
+            required>
+        </div>
+        <div class="orderUserForm">
+            <label for="name">Email Id: </label>
+            <input 
+            type="email" 
+            name="customerEmail" 
+            id="orderEmail" 
+            placeholder="Enter your Email ID"
+            required>
+        </div>
+
+        <div class="orderUserForm">
+            <label for="name">Quantity: </label>
+            <input 
+            type="number" 
+            name="quantity" 
+            id="orderQuantity" 
+            maxlength="2"   
+            minlength="1"
+            placeholder="Enter Number of quantity" 
+            required>
+        </div>
+        <div class="orderUserForm">
+            <label for="orderMessage">Message:</label>
+            <textarea 
+            name="orderMessage" 
+            id="orderMessage",
+            placeholder="Type your Message or Provide any Tip..."
+            cols="20" 
+            rows="5"
+            required>
+        </textarea>    
+        <label for="paymentMethod">Payment Mode</label>
+        <div class="paymentForm">
+            
+            <label for="UPI">UPI</label>
+            <input type="radio"  disabled name="UPI" class="payment-Mode" id="UPI" value="UPI">
+            <label for="Card">Cards</label>
+            <input type="radio" disabled name="Card" class="payment-Mode" id="Card" value="Card">
+            <label for="Net Banking">Net Banking</label>
+            <input type="radio" disabled name="NetBanking" class="payment-Mode" id="NetBanking" value="Net Banking">
+            <label for="Cash">Cash On Delivery</label>
+            <input type="radio" name="Cash" class="payment-Mode" id="Cash" value="Cash On Delivery">
+        </div>
+        <p id="TotalAmount">Amount Payable: Rs.<%= menuItem.price %></p>
+        <p id="note">Note: Additional Rs. 10/- will be charged for delivery at your doorstep</p>
+        </div>
+        <button type="submit" id="orderSubmit">Place Order</button>
+    </form>
+    
+</div>
+
+
+    <script>
+        document.getElementById("checkoutButton").onclick = function(){
+        var form = document.getElementById("orderForm");
+            if(form.style.display === "none"){
+                form.style.display = "block";
+            }
+            else {
+                form.style.display = "none";
+            }
+        };
+
+    </script>
+

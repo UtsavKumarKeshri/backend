@@ -1,0 +1,35 @@
+<div class="hyperlinks">
+  <div class="redirect-addFood-Page">
+      <a href="addFood">Add more Items</a>
+      <a href="viewPostFood">View Items</a>
+      <a href="loginSuccessful">Dashboard</a>
+      <a href="viewOrder">View Orders</a>
+
+      
+  </div>
+</div>
+
+
+<table class="table table-striped">
+   
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Item Price</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% menusArr.forEach((menus)=>{ %>
+      <tr>
+      
+        <th scope="row">->></th>
+        <td><%=menus.FoodName%></td>
+        <td><%=menus.price%></td>
+        <td><img src="static/images/<%=menus.FoodImage%>" alt="menu-food-1" width="200px" height="100px"></td>
+        
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>

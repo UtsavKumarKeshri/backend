@@ -1,0 +1,39 @@
+<div class="hyperlinks">
+    <div class="redirect-addFood-Page">
+        <a href="addFood">Add more Items</a>
+        <a href="viewPostFood">View Items</a>
+        <a href="loginSuccessful">Dashboard</a>
+        <a href="viewOrder">View Orders</a>
+    </div>
+  </div>
+  
+  
+  <table class="table table-striped">
+     
+      <thead>
+        <tr>
+          <th scope="col">Order Name</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Mobile No</th>
+          <th scope="col">Email Id</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Message</th>
+          <th scope="col">Payment Mode</th>
+        </tr>
+      </thead>
+      <tbody>
+          <% order.forEach((order)=>{ %>
+        <tr>
+        
+          <td><%=order.orderName%></td>
+          <td><%=order.customerName%></td>
+          <td><%=order.contactNo%></td>
+          <td><%=order.customerEmail%></td>
+          <td><%=order.quantity%></td>
+          <td><%=order.orderMessage%></td>
+          <td><%=order.Cash%></td>          
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  
